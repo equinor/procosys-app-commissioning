@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BD703CA3964B1B805E60C3 /* attachment.png in Resources */ = {isa = PBXBuildFile; fileRef = C32926D872BC4EB496E4FF91 /* attachment.png */; };
+		056F2C22469A4AB8BE6B2221 /* cameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B4F57F5EF6E43819A452346 /* cameraButton.png */; };
+		0968C6D7CD0A4A34800DF4AB /* scopeStatusGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 85765D83AE9D4CF8B97885E6 /* scopeStatusGreen.png */; };
+		0B57FF1A50E24C108D7F4E33 /* scopeStatus_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1CCA2D094645C28253EF9C /* scopeStatus_selected.png */; };
+		11E3D94B9C1648B5A039DD22 /* Equinor-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E68123C200274D2F8CB836DF /* Equinor-Light.ttf */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		171CBAF5355F4EC4AF707F8B /* Equinor-MediumItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 6E034AE6AF044B0DAF325414 /* Equinor-MediumItalic.woff */; };
+		1EDF7CA3E49B49C7B4E44937 /* scopeStatusPa_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 571D8A64999646B7952C9DDE /* scopeStatusPa_selected.png */; };
+		25C451D66CAE425387FE621E /* attachment_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E18EDD62E3FA4336ADBBD617 /* attachment_selected.png */; };
+		266883DD98584C909BBC819F /* Equinor-BoldItalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 80BD0B6A26854A8E9A53FA1A /* Equinor-BoldItalic.woff2 */; };
+		2C5DEB34495E40C49E3FD6FA /* Equinor-Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 2DF9A91BAA7C4A389F6BCF4F /* Equinor-Regular.woff */; };
+		320D030FCBB3437696AC9617 /* Equinor-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5D207386040D1B742D5AC /* Equinor-MediumItalic.ttf */; };
+		3AEE26A7187B4524B41E654D /* statoil_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7FFEE17B7461FBBF17540 /* statoil_logo@2x.png */; };
+		3B4F08806B394C6EAF909ADA /* Equinor-Medium.woff in Resources */ = {isa = PBXBuildFile; fileRef = ECAFFFDECF7546DBB55DA23B /* Equinor-Medium.woff */; };
+		4A111E96DCB4431A80C9F87A /* Equinor-Bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D22E38AAE3B148C0B9C4DC59 /* Equinor-Bold.woff2 */; };
+		4F1B157C84AA4F838C7A91EA /* Equinor-Regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = BDDBF06772AA414EB37BF672 /* Equinor-Regular.woff2 */; };
+		505617FBE0D54E719DB06B52 /* Equinor-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60B07DA5F20D4CAF9BA67087 /* Equinor-Bold.ttf */; };
+		51A0A771E1EC4AD1995645C7 /* attachment_notselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BA9D20BC74E3892A37DBE /* attachment_notselected.png */; };
+		51CD4FDD5EAF48F6B126D550 /* Equinor-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80D4900D4C5D4B9DA18F439E /* Equinor-Medium.ttf */; };
+		52213DB1C7044345BC8CCA96 /* left_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 747E62EC983441EC8C002D3F /* left_grey.png */; };
+		5E4D882314F5470DB5480D6D /* right_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AB1321B1316408F8551D708 /* right_red.png */; };
+		6418C5E35A604AE4AD4C7756 /* Equinor-Light.woff in Resources */ = {isa = PBXBuildFile; fileRef = D95B0692B0DF46348602CC3C /* Equinor-Light.woff */; };
+		6493D73931894B30ABB895BB /* scopeStatusPb.png in Resources */ = {isa = PBXBuildFile; fileRef = EE7BB1D29EED47BCB5E557BB /* scopeStatusPb.png */; };
+		6C6DEF2700334A91B679A52A /* icon_medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F06B78E47604D19A29613BC /* icon_medium.png */; };
+		6D6767E397AE46428CEA67D0 /* left_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = CB2AE6CDBFD54B5DAFB156E2 /* left_yellow.png */; };
+		6DE7622F7ACC4769BB72037C /* parameter_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCCF74E13E4021A5A1564C /* parameter_selected.png */; };
+		6E3BA21627EE41D8878E268E /* icon_check_circle_black.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CE255E5BE84352934123F0 /* icon_check_circle_black.png */; };
+		6FEDF93820594BF78C5B0097 /* deletePhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 765BE7D5936440A2AFA462C5 /* deletePhoto.png */; };
+		7CAD48534D6A4649946FF22F /* statoil_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FF748C8CE2445A82BE543C /* statoil_logo.png */; };
+		82B968E5845B4CF4B3D559FC /* left_red.png in Resources */ = {isa = PBXBuildFile; fileRef = D33327F4FFE84500A4912440 /* left_red.png */; };
+		839BCC98F4FF405B9423F873 /* statoil_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C24C434AE7B744CDB1963BB4 /* statoil_logo@3x.png */; };
+		8586163C894D40E48596B192 /* old_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DBB784D02E46479FD0F2E0 /* old_logo@3x.png */; };
+		8AFD6955B9604F2B9D4DF3B2 /* _logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C23B6D11AF46C8A873FC1D /* _logo@3x.png */; };
+		8C10F4C5C90548AA9CABCA7D /* icon_check_circle_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 077F12858DAE423993FBB335 /* icon_check_circle_blue.png */; };
+		8F997877D06D4EF69A85D8BD /* old_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A73E00E63F3240C8A3B08105 /* old_logo@2x.png */; };
+		9386797F4BBE4864B5E2087F /* parameter_notselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 5627D1EB9AD246B6827A4B15 /* parameter_notselected.png */; };
+		9C3067CD03484CBA9C8719AD /* right_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = E5CA77ED813A4FA99ABC0471 /* right_grey.png */; };
+		A495E2BE00B54755917E0260 /* Equinor-BoldItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = B79A4769E4E04C3199A6CBA1 /* Equinor-BoldItalic.woff */; };
+		A594422F921A4388A3EDB465 /* _logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1C521B465E44B9A5C16495 /* _logo.png */; };
+		A5957855122F4DAA8B70B320 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A31A8C2820C45F0B6639593 /* Icon.png */; };
+		A710F6E284084EDCBFC31AFC /* tasks_notselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 16C06ACFF01D4216A9BCD4EE /* tasks_notselected.png */; };
+		AE345F23980A4759A2EA5511 /* left_green.png in Resources */ = {isa = PBXBuildFile; fileRef = A3BE1AB7B5C2414FA30E5EBC /* left_green.png */; };
+		AEF8DA649CDA4BA28FBF51CE /* scopeStatusPb_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A099352AA34B0DB2174D3B /* scopeStatusPb_selected.png */; };
+		B08ECA69D03943D89AA56BE7 /* Equinor-Bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = C751735BC30A4C0C9EDF97BF /* Equinor-Bold.woff */; };
+		B3BD83273981486B80AF60F4 /* _logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B0E5EBE8D184BFBB4CFE152 /* _logo@2x.png */; };
+		BD91A0FC1ED14A2F808C4DF0 /* Equinor-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC15AC8E45E4B39897BB5E3 /* Equinor-Italic.ttf */; };
+		BE836E39542F41569C980930 /* Equinor-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C99DAC2997744F8B55C4931 /* Equinor-BoldItalic.ttf */; };
+		C0A4B1C73887461C88674DED /* Equinor-Italic.woff in Resources */ = {isa = PBXBuildFile; fileRef = 9267BC10E11544DF8EB791E6 /* Equinor-Italic.woff */; };
+		C466B46041EB47CD9121CFA0 /* Equinor-Medium.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 887E5B6728924FA0B09D2BE4 /* Equinor-Medium.woff2 */; };
+		C90910637B1047C1A0CC0B81 /* icon_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C4ED945EE6C43C3B3D71F12 /* icon_large.png */; };
+		C9BC444DCA164487A42D14A1 /* Equinor-LightItalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 85EDA3078D1D45AEA66ED6A8 /* Equinor-LightItalic.woff2 */; };
+		CA9FB97CB88A4F5DB9BCB626 /* Equinor-MediumItalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = A8C7244CE4754C43B9C70E83 /* Equinor-MediumItalic.woff2 */; };
+		CE19335546DE429081DDB2CB /* Equinor-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E15B45FC98C54EA0B6DCE3E2 /* Equinor-Regular.ttf */; };
+		D075858D825F4277A6101899 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 5095444E37424157948B34AB /* Group.png */; };
+		D236630406144A109D528A31 /* Equinor-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E486D9AF651A42CFB6E85C49 /* Equinor-LightItalic.ttf */; };
+		D3CDDF71AA414367AA791AA2 /* Equinor-LightItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = AC130B5B27B84854BBDF2139 /* Equinor-LightItalic.woff */; };
+		D519CED8B39B445DAB8F92ED /* Equinor_logo2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A11CEB8BA3C14D1E8E94D7B6 /* Equinor_logo2x.png */; };
+		D7BA2047E4204F11A1BE7B1D /* right_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD5FB28E21647B4ABCEBB93 /* right_green.png */; };
+		DABEB3D9AE1D4C54A019BBEA /* scopeStatusGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E0FCC9C3D34C6F98E8B56E /* scopeStatusGrey.png */; };
+		DD10EAFCA05F4E51B878EEA1 /* Equinor-Italic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = BC850C6E6BED492286D7B1C7 /* Equinor-Italic.woff2 */; };
+		DFAFDABCCCAF4B61BE76DE1B /* old_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F55F47F6BBA3417DA5F1F4B5 /* old_logo.png */; };
+		E221DB9F70E54782947F9DCF /* Equinor-Light.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C68955F401714D9D9BB7E2B9 /* Equinor-Light.woff2 */; };
+		E22B097CC15A4ECCABAE6DDF /* scopeStatusPa.png in Resources */ = {isa = PBXBuildFile; fileRef = C56A6022A4F445ADA32563A5 /* scopeStatusPa.png */; };
+		EA2A7975AE874AEAB9A4EAF9 /* icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C421EBD3D327436ABC6DA805 /* icon_small.png */; };
+		EAA237D33C4C4E9994123775 /* Equinor_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C9035B0D764547856D864C /* Equinor_logo.png */; };
+		EE3C0CBFB88E4A2EB9796DC2 /* tasks_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBCF5DD036B4BC4BF6B5F41 /* tasks_selected.png */; };
+		F25E8143532B4B96BCDE4B65 /* right_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 39BFB3A4075B43A994749A79 /* right_yellow.png */; };
+		F25F522729334649AA0ECB4D /* scopeStatus.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FF11F4943945209623D24D /* scopeStatus.png */; };
+		F92F40A2C8095AD786C6127D /* libPods-CommProCoSys.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B646FBC00DC7EFC5786BC70F /* libPods-CommProCoSys.a */; };
+		FE03A10BCBD2483D852FD607 /* Equinor_logo3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3CA69CE4A034D6F8164BABB /* Equinor_logo3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BC119FF23A27CA9003B4785 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81E019C250464CEBADC1E35C /* RNAdalPlugin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNAdalPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* CommProCoSysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommProCoSysTests.m; sourceTree = "<group>"; };
+		016BFD39245C4965B5369D47 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		077F12858DAE423993FBB335 /* icon_check_circle_blue.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_check_circle_blue.png; path = ../resources/images/icon_check_circle_blue.png; sourceTree = "<group>"; };
+		0B0E5EBE8D184BFBB4CFE152 /* _logo@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "_logo@2x.png"; path = "../resources/images/_logo@2x.png"; sourceTree = "<group>"; };
+		103AD1624AC0A56942937239 /* Pods-CommProCoSysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSysTests.release.xcconfig"; path = "Target Support Files/Pods-CommProCoSysTests/Pods-CommProCoSysTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* CommProCoSys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommProCoSys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CommProCoSys/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CommProCoSys/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CommProCoSys/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CommProCoSys/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CommProCoSys/main.m; sourceTree = "<group>"; };
+		16C06ACFF01D4216A9BCD4EE /* tasks_notselected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = tasks_notselected.png; path = ../resources/images/tasks_notselected.png; sourceTree = "<group>"; };
+		1C92D53C2F4B4F25BB58B6B1 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		1CD5FB28E21647B4ABCEBB93 /* right_green.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = right_green.png; path = ../resources/images/status/right_green.png; sourceTree = "<group>"; };
+		1E3A23DCA7D69F8ED6D2499C /* Pods-CommProCoSys-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSys-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CommProCoSys-tvOSTests/Pods-CommProCoSys-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		239AC205A039D3B4161FC0A9 /* Pods-CommProCoSysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSysTests.debug.xcconfig"; path = "Target Support Files/Pods-CommProCoSysTests/Pods-CommProCoSysTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27C23B6D11AF46C8A873FC1D /* _logo@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "_logo@3x.png"; path = "../resources/images/_logo@3x.png"; sourceTree = "<group>"; };
+		2801CF37E8B3453EAD9D34D1 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		2C4ED945EE6C43C3B3D71F12 /* icon_large.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_large.png; path = ../resources/images/icon_large.png; sourceTree = "<group>"; };
+		2DF9A91BAA7C4A389F6BCF4F /* Equinor-Regular.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Regular.woff"; path = "../resources/fonts/Equinor-Regular.woff"; sourceTree = "<group>"; };
+		2FD7FFEE17B7461FBBF17540 /* statoil_logo@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "statoil_logo@2x.png"; path = "../resources/images/statoil_logo@2x.png"; sourceTree = "<group>"; };
+		32C2550C653648A2827E4C89 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		33272382A0B34162A81EC6C4 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		39BFB3A4075B43A994749A79 /* right_yellow.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = right_yellow.png; path = ../resources/images/status/right_yellow.png; sourceTree = "<group>"; };
+		3DBE8CEF3C1438B75AA302BF /* Pods-CommProCoSys-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSys-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CommProCoSys-tvOS/Pods-CommProCoSys-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3DFCCF74E13E4021A5A1564C /* parameter_selected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = parameter_selected.png; path = ../resources/images/parameter_selected.png; sourceTree = "<group>"; };
+		4367F58E903C73C3942A3354 /* libPods-CommProCoSys-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommProCoSys-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43FF748C8CE2445A82BE543C /* statoil_logo.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = statoil_logo.png; path = ../resources/images/statoil_logo.png; sourceTree = "<group>"; };
+		46343C83110214182C67CDE4 /* libPods-CommProCoSysTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommProCoSysTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5095444E37424157948B34AB /* Group.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Group.png; path = ../resources/images/Group.png; sourceTree = "<group>"; };
+		5627D1EB9AD246B6827A4B15 /* parameter_notselected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = parameter_notselected.png; path = ../resources/images/parameter_notselected.png; sourceTree = "<group>"; };
+		571D8A64999646B7952C9DDE /* scopeStatusPa_selected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatusPa_selected.png; path = ../resources/images/scopeStatusPa_selected.png; sourceTree = "<group>"; };
+		5860C5A68A0E3FBED36354AD /* Pods-CommProCoSys-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSys-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CommProCoSys-tvOS/Pods-CommProCoSys-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		5AB1321B1316408F8551D708 /* right_red.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = right_red.png; path = ../resources/images/status/right_red.png; sourceTree = "<group>"; };
+		5F2BA9D20BC74E3892A37DBE /* attachment_notselected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = attachment_notselected.png; path = ../resources/images/attachment_notselected.png; sourceTree = "<group>"; };
+		60B07DA5F20D4CAF9BA67087 /* Equinor-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Bold.ttf"; path = "../resources/fonts/Equinor-Bold.ttf"; sourceTree = "<group>"; };
+		63FF11F4943945209623D24D /* scopeStatus.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatus.png; path = ../resources/images/scopeStatus.png; sourceTree = "<group>"; };
+		64386BC7C75DB68C171BF827 /* libPods-CommProCoSys-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommProCoSys-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EDBAF051C441DAAB31BB7B /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		65C42E757C794324BE6ED0D6 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		6AC15AC8E45E4B39897BB5E3 /* Equinor-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Italic.ttf"; path = "../resources/fonts/Equinor-Italic.ttf"; sourceTree = "<group>"; };
+		6B4F57F5EF6E43819A452346 /* cameraButton.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = cameraButton.png; path = ../resources/images/cameraButton.png; sourceTree = "<group>"; };
+		6C21869655CE4BD7ADBBF008 /* libRNAdalPlugin.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAdalPlugin.a; sourceTree = "<group>"; };
+		6D2B965BD5BC4B748063D1A2 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		6E034AE6AF044B0DAF325414 /* Equinor-MediumItalic.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-MediumItalic.woff"; path = "../resources/fonts/Equinor-MediumItalic.woff"; sourceTree = "<group>"; };
+		72A099352AA34B0DB2174D3B /* scopeStatusPb_selected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatusPb_selected.png; path = ../resources/images/scopeStatusPb_selected.png; sourceTree = "<group>"; };
+		747E62EC983441EC8C002D3F /* left_grey.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = left_grey.png; path = ../resources/images/status/left_grey.png; sourceTree = "<group>"; };
+		765BE7D5936440A2AFA462C5 /* deletePhoto.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = deletePhoto.png; path = ../resources/images/deletePhoto.png; sourceTree = "<group>"; };
+		779D34A63946F5AA577CA1DD /* Pods-CommProCoSys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSys.debug.xcconfig"; path = "Target Support Files/Pods-CommProCoSys/Pods-CommProCoSys.debug.xcconfig"; sourceTree = "<group>"; };
+		7F06B78E47604D19A29613BC /* icon_medium.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_medium.png; path = ../resources/images/icon_medium.png; sourceTree = "<group>"; };
+		80BD0B6A26854A8E9A53FA1A /* Equinor-BoldItalic.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-BoldItalic.woff2"; path = "../resources/fonts/Equinor-BoldItalic.woff2"; sourceTree = "<group>"; };
+		80D4900D4C5D4B9DA18F439E /* Equinor-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Medium.ttf"; path = "../resources/fonts/Equinor-Medium.ttf"; sourceTree = "<group>"; };
+		8108E2CF3123408CAD640094 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		81E019C250464CEBADC1E35C /* RNAdalPlugin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAdalPlugin.xcodeproj; path = "../node_modules/react-native-ms-adal/ios/RNAdalPlugin.xcodeproj"; sourceTree = "<group>"; };
+		84BE5DD81DB9BF8B3B6CEDBC /* Pods-CommProCoSys-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSys-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-CommProCoSys-tvOSTests/Pods-CommProCoSys-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85765D83AE9D4CF8B97885E6 /* scopeStatusGreen.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatusGreen.png; path = ../resources/images/scopeStatusGreen.png; sourceTree = "<group>"; };
+		85EDA3078D1D45AEA66ED6A8 /* Equinor-LightItalic.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-LightItalic.woff2"; path = "../resources/fonts/Equinor-LightItalic.woff2"; sourceTree = "<group>"; };
+		8709A5E7702C4A988C045FCF /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		887E5B6728924FA0B09D2BE4 /* Equinor-Medium.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Medium.woff2"; path = "../resources/fonts/Equinor-Medium.woff2"; sourceTree = "<group>"; };
+		8AC5D207386040D1B742D5AC /* Equinor-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-MediumItalic.ttf"; path = "../resources/fonts/Equinor-MediumItalic.ttf"; sourceTree = "<group>"; };
+		8C99DAC2997744F8B55C4931 /* Equinor-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-BoldItalic.ttf"; path = "../resources/fonts/Equinor-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8CA6F6E9CCD54BEA95025E03 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		9267BC10E11544DF8EB791E6 /* Equinor-Italic.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Italic.woff"; path = "../resources/fonts/Equinor-Italic.woff"; sourceTree = "<group>"; };
+		92DBB784D02E46479FD0F2E0 /* old_logo@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "old_logo@3x.png"; path = "../resources/images/old_logo@3x.png"; sourceTree = "<group>"; };
+		93C777F77CD7484A1436C1B0 /* Pods-CommProCoSys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommProCoSys.release.xcconfig"; path = "Target Support Files/Pods-CommProCoSys/Pods-CommProCoSys.release.xcconfig"; sourceTree = "<group>"; };
+		93DC331A34124A9593F04527 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		9A31A8C2820C45F0B6639593 /* Icon.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Icon.png; path = ../resources/images/status/Icon.png; sourceTree = "<group>"; };
+		A11CEB8BA3C14D1E8E94D7B6 /* Equinor_logo2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Equinor_logo2x.png; path = ../resources/images/Equinor_logo2x.png; sourceTree = "<group>"; };
+		A3BE1AB7B5C2414FA30E5EBC /* left_green.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = left_green.png; path = ../resources/images/status/left_green.png; sourceTree = "<group>"; };
+		A5CE255E5BE84352934123F0 /* icon_check_circle_black.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_check_circle_black.png; path = ../resources/images/icon_check_circle_black.png; sourceTree = "<group>"; };
+		A73E00E63F3240C8A3B08105 /* old_logo@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "old_logo@2x.png"; path = "../resources/images/old_logo@2x.png"; sourceTree = "<group>"; };
+		A8C7244CE4754C43B9C70E83 /* Equinor-MediumItalic.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-MediumItalic.woff2"; path = "../resources/fonts/Equinor-MediumItalic.woff2"; sourceTree = "<group>"; };
+		AC130B5B27B84854BBDF2139 /* Equinor-LightItalic.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-LightItalic.woff"; path = "../resources/fonts/Equinor-LightItalic.woff"; sourceTree = "<group>"; };
+		B4E0FCC9C3D34C6F98E8B56E /* scopeStatusGrey.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatusGrey.png; path = ../resources/images/scopeStatusGrey.png; sourceTree = "<group>"; };
+		B646FBC00DC7EFC5786BC70F /* libPods-CommProCoSys.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommProCoSys.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6FB68C151354842BCF5A0A3 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		B79A4769E4E04C3199A6CBA1 /* Equinor-BoldItalic.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-BoldItalic.woff"; path = "../resources/fonts/Equinor-BoldItalic.woff"; sourceTree = "<group>"; };
+		BC850C6E6BED492286D7B1C7 /* Equinor-Italic.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Italic.woff2"; path = "../resources/fonts/Equinor-Italic.woff2"; sourceTree = "<group>"; };
+		BDBCF5DD036B4BC4BF6B5F41 /* tasks_selected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = tasks_selected.png; path = ../resources/images/tasks_selected.png; sourceTree = "<group>"; };
+		BDDBF06772AA414EB37BF672 /* Equinor-Regular.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Regular.woff2"; path = "../resources/fonts/Equinor-Regular.woff2"; sourceTree = "<group>"; };
+		C13894F46B974BF4A341E865 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		C24C434AE7B744CDB1963BB4 /* statoil_logo@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "statoil_logo@3x.png"; path = "../resources/images/statoil_logo@3x.png"; sourceTree = "<group>"; };
+		C32926D872BC4EB496E4FF91 /* attachment.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = attachment.png; path = ../resources/images/attachment.png; sourceTree = "<group>"; };
+		C421EBD3D327436ABC6DA805 /* icon_small.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icon_small.png; path = ../resources/images/icon_small.png; sourceTree = "<group>"; };
+		C56A6022A4F445ADA32563A5 /* scopeStatusPa.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatusPa.png; path = ../resources/images/scopeStatusPa.png; sourceTree = "<group>"; };
+		C68955F401714D9D9BB7E2B9 /* Equinor-Light.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Light.woff2"; path = "../resources/fonts/Equinor-Light.woff2"; sourceTree = "<group>"; };
+		C751735BC30A4C0C9EDF97BF /* Equinor-Bold.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Bold.woff"; path = "../resources/fonts/Equinor-Bold.woff"; sourceTree = "<group>"; };
+		CB2AE6CDBFD54B5DAFB156E2 /* left_yellow.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = left_yellow.png; path = ../resources/images/status/left_yellow.png; sourceTree = "<group>"; };
+		CDB64A0F34F4464E96914154 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		D22E38AAE3B148C0B9C4DC59 /* Equinor-Bold.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Bold.woff2"; path = "../resources/fonts/Equinor-Bold.woff2"; sourceTree = "<group>"; };
+		D33327F4FFE84500A4912440 /* left_red.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = left_red.png; path = ../resources/images/status/left_red.png; sourceTree = "<group>"; };
+		D95B0692B0DF46348602CC3C /* Equinor-Light.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Light.woff"; path = "../resources/fonts/Equinor-Light.woff"; sourceTree = "<group>"; };
+		D9C9035B0D764547856D864C /* Equinor_logo.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Equinor_logo.png; path = ../resources/images/Equinor_logo.png; sourceTree = "<group>"; };
+		DF1C521B465E44B9A5C16495 /* _logo.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = _logo.png; path = ../resources/images/_logo.png; sourceTree = "<group>"; };
+		E15B45FC98C54EA0B6DCE3E2 /* Equinor-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Regular.ttf"; path = "../resources/fonts/Equinor-Regular.ttf"; sourceTree = "<group>"; };
+		E18EDD62E3FA4336ADBBD617 /* attachment_selected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = attachment_selected.png; path = ../resources/images/attachment_selected.png; sourceTree = "<group>"; };
+		E3CA69CE4A034D6F8164BABB /* Equinor_logo3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Equinor_logo3x.png; path = ../resources/images/Equinor_logo3x.png; sourceTree = "<group>"; };
+		E486D9AF651A42CFB6E85C49 /* Equinor-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-LightItalic.ttf"; path = "../resources/fonts/Equinor-LightItalic.ttf"; sourceTree = "<group>"; };
+		E5CA77ED813A4FA99ABC0471 /* right_grey.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = right_grey.png; path = ../resources/images/status/right_grey.png; sourceTree = "<group>"; };
+		E68123C200274D2F8CB836DF /* Equinor-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Light.ttf"; path = "../resources/fonts/Equinor-Light.ttf"; sourceTree = "<group>"; };
+		ECAFFFDECF7546DBB55DA23B /* Equinor-Medium.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Equinor-Medium.woff"; path = "../resources/fonts/Equinor-Medium.woff"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EE7BB1D29EED47BCB5E557BB /* scopeStatusPb.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatusPb.png; path = ../resources/images/scopeStatusPb.png; sourceTree = "<group>"; };
+		F55F47F6BBA3417DA5F1F4B5 /* old_logo.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = old_logo.png; path = ../resources/images/old_logo.png; sourceTree = "<group>"; };
+		FA564FA6B8ED44089D02CD40 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		FE1CCA2D094645C28253EF9C /* scopeStatus_selected.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = scopeStatus_selected.png; path = ../resources/images/scopeStatus_selected.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92F40A2C8095AD786C6127D /* libPods-CommProCoSys.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* CommProCoSysTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* CommProCoSysTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = CommProCoSysTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* CommProCoSys */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = CommProCoSys;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				B646FBC00DC7EFC5786BC70F /* libPods-CommProCoSys.a */,
+				4367F58E903C73C3942A3354 /* libPods-CommProCoSys-tvOS.a */,
+				64386BC7C75DB68C171BF827 /* libPods-CommProCoSys-tvOSTests.a */,
+				46343C83110214182C67CDE4 /* libPods-CommProCoSysTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BC119FB23A27CA9003B4785 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				6C21869655CE4BD7ADBBF008 /* libRNAdalPlugin.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		5BC119FC23A27CA9003B4785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BC11A0023A27CA9003B4785 /* libRNAdalPlugin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				81E019C250464CEBADC1E35C /* RNAdalPlugin.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* CommProCoSys */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* CommProCoSysTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				F56D022C346641827EF150D6 /* Pods */,
+				EE7DB692A9E447D59280F047 /* Resources */,
+				5BC119FB23A27CA9003B4785 /* Recovered References */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* CommProCoSys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE7DB692A9E447D59280F047 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C521B465E44B9A5C16495 /* _logo.png */,
+				0B0E5EBE8D184BFBB4CFE152 /* _logo@2x.png */,
+				27C23B6D11AF46C8A873FC1D /* _logo@3x.png */,
+				5F2BA9D20BC74E3892A37DBE /* attachment_notselected.png */,
+				E18EDD62E3FA4336ADBBD617 /* attachment_selected.png */,
+				C32926D872BC4EB496E4FF91 /* attachment.png */,
+				6B4F57F5EF6E43819A452346 /* cameraButton.png */,
+				765BE7D5936440A2AFA462C5 /* deletePhoto.png */,
+				D9C9035B0D764547856D864C /* Equinor_logo.png */,
+				A11CEB8BA3C14D1E8E94D7B6 /* Equinor_logo2x.png */,
+				E3CA69CE4A034D6F8164BABB /* Equinor_logo3x.png */,
+				5095444E37424157948B34AB /* Group.png */,
+				A5CE255E5BE84352934123F0 /* icon_check_circle_black.png */,
+				077F12858DAE423993FBB335 /* icon_check_circle_blue.png */,
+				2C4ED945EE6C43C3B3D71F12 /* icon_large.png */,
+				7F06B78E47604D19A29613BC /* icon_medium.png */,
+				C421EBD3D327436ABC6DA805 /* icon_small.png */,
+				F55F47F6BBA3417DA5F1F4B5 /* old_logo.png */,
+				A73E00E63F3240C8A3B08105 /* old_logo@2x.png */,
+				92DBB784D02E46479FD0F2E0 /* old_logo@3x.png */,
+				5627D1EB9AD246B6827A4B15 /* parameter_notselected.png */,
+				3DFCCF74E13E4021A5A1564C /* parameter_selected.png */,
+				FE1CCA2D094645C28253EF9C /* scopeStatus_selected.png */,
+				63FF11F4943945209623D24D /* scopeStatus.png */,
+				85765D83AE9D4CF8B97885E6 /* scopeStatusGreen.png */,
+				B4E0FCC9C3D34C6F98E8B56E /* scopeStatusGrey.png */,
+				571D8A64999646B7952C9DDE /* scopeStatusPa_selected.png */,
+				C56A6022A4F445ADA32563A5 /* scopeStatusPa.png */,
+				72A099352AA34B0DB2174D3B /* scopeStatusPb_selected.png */,
+				EE7BB1D29EED47BCB5E557BB /* scopeStatusPb.png */,
+				43FF748C8CE2445A82BE543C /* statoil_logo.png */,
+				2FD7FFEE17B7461FBBF17540 /* statoil_logo@2x.png */,
+				C24C434AE7B744CDB1963BB4 /* statoil_logo@3x.png */,
+				9A31A8C2820C45F0B6639593 /* Icon.png */,
+				A3BE1AB7B5C2414FA30E5EBC /* left_green.png */,
+				747E62EC983441EC8C002D3F /* left_grey.png */,
+				D33327F4FFE84500A4912440 /* left_red.png */,
+				CB2AE6CDBFD54B5DAFB156E2 /* left_yellow.png */,
+				1CD5FB28E21647B4ABCEBB93 /* right_green.png */,
+				E5CA77ED813A4FA99ABC0471 /* right_grey.png */,
+				5AB1321B1316408F8551D708 /* right_red.png */,
+				39BFB3A4075B43A994749A79 /* right_yellow.png */,
+				16C06ACFF01D4216A9BCD4EE /* tasks_notselected.png */,
+				BDBCF5DD036B4BC4BF6B5F41 /* tasks_selected.png */,
+				60B07DA5F20D4CAF9BA67087 /* Equinor-Bold.ttf */,
+				C751735BC30A4C0C9EDF97BF /* Equinor-Bold.woff */,
+				D22E38AAE3B148C0B9C4DC59 /* Equinor-Bold.woff2 */,
+				8C99DAC2997744F8B55C4931 /* Equinor-BoldItalic.ttf */,
+				B79A4769E4E04C3199A6CBA1 /* Equinor-BoldItalic.woff */,
+				80BD0B6A26854A8E9A53FA1A /* Equinor-BoldItalic.woff2 */,
+				6AC15AC8E45E4B39897BB5E3 /* Equinor-Italic.ttf */,
+				9267BC10E11544DF8EB791E6 /* Equinor-Italic.woff */,
+				BC850C6E6BED492286D7B1C7 /* Equinor-Italic.woff2 */,
+				E68123C200274D2F8CB836DF /* Equinor-Light.ttf */,
+				D95B0692B0DF46348602CC3C /* Equinor-Light.woff */,
+				C68955F401714D9D9BB7E2B9 /* Equinor-Light.woff2 */,
+				E486D9AF651A42CFB6E85C49 /* Equinor-LightItalic.ttf */,
+				AC130B5B27B84854BBDF2139 /* Equinor-LightItalic.woff */,
+				85EDA3078D1D45AEA66ED6A8 /* Equinor-LightItalic.woff2 */,
+				80D4900D4C5D4B9DA18F439E /* Equinor-Medium.ttf */,
+				ECAFFFDECF7546DBB55DA23B /* Equinor-Medium.woff */,
+				887E5B6728924FA0B09D2BE4 /* Equinor-Medium.woff2 */,
+				8AC5D207386040D1B742D5AC /* Equinor-MediumItalic.ttf */,
+				6E034AE6AF044B0DAF325414 /* Equinor-MediumItalic.woff */,
+				A8C7244CE4754C43B9C70E83 /* Equinor-MediumItalic.woff2 */,
+				E15B45FC98C54EA0B6DCE3E2 /* Equinor-Regular.ttf */,
+				2DF9A91BAA7C4A389F6BCF4F /* Equinor-Regular.woff */,
+				BDDBF06772AA414EB37BF672 /* Equinor-Regular.woff2 */,
+				1C92D53C2F4B4F25BB58B6B1 /* AntDesign.ttf */,
+				FA564FA6B8ED44089D02CD40 /* Entypo.ttf */,
+				32C2550C653648A2827E4C89 /* EvilIcons.ttf */,
+				CDB64A0F34F4464E96914154 /* Feather.ttf */,
+				8709A5E7702C4A988C045FCF /* FontAwesome.ttf */,
+				2801CF37E8B3453EAD9D34D1 /* FontAwesome5_Brands.ttf */,
+				B6FB68C151354842BCF5A0A3 /* FontAwesome5_Regular.ttf */,
+				64EDBAF051C441DAAB31BB7B /* FontAwesome5_Solid.ttf */,
+				65C42E757C794324BE6ED0D6 /* Fontisto.ttf */,
+				8CA6F6E9CCD54BEA95025E03 /* Foundation.ttf */,
+				93DC331A34124A9593F04527 /* Ionicons.ttf */,
+				33272382A0B34162A81EC6C4 /* MaterialCommunityIcons.ttf */,
+				6D2B965BD5BC4B748063D1A2 /* MaterialIcons.ttf */,
+				016BFD39245C4965B5369D47 /* Octicons.ttf */,
+				C13894F46B974BF4A341E865 /* SimpleLineIcons.ttf */,
+				8108E2CF3123408CAD640094 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F56D022C346641827EF150D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				779D34A63946F5AA577CA1DD /* Pods-CommProCoSys.debug.xcconfig */,
+				93C777F77CD7484A1436C1B0 /* Pods-CommProCoSys.release.xcconfig */,
+				3DBE8CEF3C1438B75AA302BF /* Pods-CommProCoSys-tvOS.debug.xcconfig */,
+				5860C5A68A0E3FBED36354AD /* Pods-CommProCoSys-tvOS.release.xcconfig */,
+				84BE5DD81DB9BF8B3B6CEDBC /* Pods-CommProCoSys-tvOSTests.debug.xcconfig */,
+				1E3A23DCA7D69F8ED6D2499C /* Pods-CommProCoSys-tvOSTests.release.xcconfig */,
+				239AC205A039D3B4161FC0A9 /* Pods-CommProCoSysTests.debug.xcconfig */,
+				103AD1624AC0A56942937239 /* Pods-CommProCoSysTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* CommProCoSys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CommProCoSys" */;
+			buildPhases = (
+				683F59B0A6C121C6CB1D8BF2 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				A9DA8D7130A72DB43030D924 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommProCoSys;
+			productName = CommProCoSys;
+			productReference = 13B07F961A680F5B00A75B9A /* CommProCoSys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 940;
+				ORGANIZATIONNAME = Facebook;
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CommProCoSys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5BC119FC23A27CA9003B4785 /* Products */;
+					ProjectRef = 81E019C250464CEBADC1E35C /* RNAdalPlugin.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* CommProCoSys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5BC11A0023A27CA9003B4785 /* libRNAdalPlugin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNAdalPlugin.a;
+			remoteRef = 5BC119FF23A27CA9003B4785 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				A594422F921A4388A3EDB465 /* _logo.png in Resources */,
+				B3BD83273981486B80AF60F4 /* _logo@2x.png in Resources */,
+				8AFD6955B9604F2B9D4DF3B2 /* _logo@3x.png in Resources */,
+				51A0A771E1EC4AD1995645C7 /* attachment_notselected.png in Resources */,
+				25C451D66CAE425387FE621E /* attachment_selected.png in Resources */,
+				04BD703CA3964B1B805E60C3 /* attachment.png in Resources */,
+				056F2C22469A4AB8BE6B2221 /* cameraButton.png in Resources */,
+				6FEDF93820594BF78C5B0097 /* deletePhoto.png in Resources */,
+				EAA237D33C4C4E9994123775 /* Equinor_logo.png in Resources */,
+				D519CED8B39B445DAB8F92ED /* Equinor_logo2x.png in Resources */,
+				FE03A10BCBD2483D852FD607 /* Equinor_logo3x.png in Resources */,
+				D075858D825F4277A6101899 /* Group.png in Resources */,
+				6E3BA21627EE41D8878E268E /* icon_check_circle_black.png in Resources */,
+				8C10F4C5C90548AA9CABCA7D /* icon_check_circle_blue.png in Resources */,
+				C90910637B1047C1A0CC0B81 /* icon_large.png in Resources */,
+				6C6DEF2700334A91B679A52A /* icon_medium.png in Resources */,
+				EA2A7975AE874AEAB9A4EAF9 /* icon_small.png in Resources */,
+				DFAFDABCCCAF4B61BE76DE1B /* old_logo.png in Resources */,
+				8F997877D06D4EF69A85D8BD /* old_logo@2x.png in Resources */,
+				8586163C894D40E48596B192 /* old_logo@3x.png in Resources */,
+				9386797F4BBE4864B5E2087F /* parameter_notselected.png in Resources */,
+				6DE7622F7ACC4769BB72037C /* parameter_selected.png in Resources */,
+				0B57FF1A50E24C108D7F4E33 /* scopeStatus_selected.png in Resources */,
+				F25F522729334649AA0ECB4D /* scopeStatus.png in Resources */,
+				0968C6D7CD0A4A34800DF4AB /* scopeStatusGreen.png in Resources */,
+				DABEB3D9AE1D4C54A019BBEA /* scopeStatusGrey.png in Resources */,
+				1EDF7CA3E49B49C7B4E44937 /* scopeStatusPa_selected.png in Resources */,
+				E22B097CC15A4ECCABAE6DDF /* scopeStatusPa.png in Resources */,
+				AEF8DA649CDA4BA28FBF51CE /* scopeStatusPb_selected.png in Resources */,
+				6493D73931894B30ABB895BB /* scopeStatusPb.png in Resources */,
+				7CAD48534D6A4649946FF22F /* statoil_logo.png in Resources */,
+				3AEE26A7187B4524B41E654D /* statoil_logo@2x.png in Resources */,
+				839BCC98F4FF405B9423F873 /* statoil_logo@3x.png in Resources */,
+				A5957855122F4DAA8B70B320 /* Icon.png in Resources */,
+				AE345F23980A4759A2EA5511 /* left_green.png in Resources */,
+				52213DB1C7044345BC8CCA96 /* left_grey.png in Resources */,
+				82B968E5845B4CF4B3D559FC /* left_red.png in Resources */,
+				6D6767E397AE46428CEA67D0 /* left_yellow.png in Resources */,
+				D7BA2047E4204F11A1BE7B1D /* right_green.png in Resources */,
+				9C3067CD03484CBA9C8719AD /* right_grey.png in Resources */,
+				5E4D882314F5470DB5480D6D /* right_red.png in Resources */,
+				F25E8143532B4B96BCDE4B65 /* right_yellow.png in Resources */,
+				A710F6E284084EDCBFC31AFC /* tasks_notselected.png in Resources */,
+				EE3C0CBFB88E4A2EB9796DC2 /* tasks_selected.png in Resources */,
+				505617FBE0D54E719DB06B52 /* Equinor-Bold.ttf in Resources */,
+				B08ECA69D03943D89AA56BE7 /* Equinor-Bold.woff in Resources */,
+				4A111E96DCB4431A80C9F87A /* Equinor-Bold.woff2 in Resources */,
+				BE836E39542F41569C980930 /* Equinor-BoldItalic.ttf in Resources */,
+				A495E2BE00B54755917E0260 /* Equinor-BoldItalic.woff in Resources */,
+				266883DD98584C909BBC819F /* Equinor-BoldItalic.woff2 in Resources */,
+				BD91A0FC1ED14A2F808C4DF0 /* Equinor-Italic.ttf in Resources */,
+				C0A4B1C73887461C88674DED /* Equinor-Italic.woff in Resources */,
+				DD10EAFCA05F4E51B878EEA1 /* Equinor-Italic.woff2 in Resources */,
+				11E3D94B9C1648B5A039DD22 /* Equinor-Light.ttf in Resources */,
+				6418C5E35A604AE4AD4C7756 /* Equinor-Light.woff in Resources */,
+				E221DB9F70E54782947F9DCF /* Equinor-Light.woff2 in Resources */,
+				D236630406144A109D528A31 /* Equinor-LightItalic.ttf in Resources */,
+				D3CDDF71AA414367AA791AA2 /* Equinor-LightItalic.woff in Resources */,
+				C9BC444DCA164487A42D14A1 /* Equinor-LightItalic.woff2 in Resources */,
+				51CD4FDD5EAF48F6B126D550 /* Equinor-Medium.ttf in Resources */,
+				3B4F08806B394C6EAF909ADA /* Equinor-Medium.woff in Resources */,
+				C466B46041EB47CD9121CFA0 /* Equinor-Medium.woff2 in Resources */,
+				320D030FCBB3437696AC9617 /* Equinor-MediumItalic.ttf in Resources */,
+				171CBAF5355F4EC4AF707F8B /* Equinor-MediumItalic.woff in Resources */,
+				CA9FB97CB88A4F5DB9BCB626 /* Equinor-MediumItalic.woff2 in Resources */,
+				CE19335546DE429081DDB2CB /* Equinor-Regular.ttf in Resources */,
+				2C5DEB34495E40C49E3FD6FA /* Equinor-Regular.woff in Resources */,
+				4F1B157C84AA4F838C7A91EA /* Equinor-Regular.woff2 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		683F59B0A6C121C6CB1D8BF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommProCoSys-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DA8D7130A72DB43030D924 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommProCoSys/Pods-CommProCoSys-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommProCoSys/Pods-CommProCoSys-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = CommProCoSys;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 779D34A63946F5AA577CA1DD /* Pods-CommProCoSys.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 150;
+				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-ms-adal/ios/**",
+				);
+				INFOPLIST_FILE = CommProCoSys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.5.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commissioning.test;
+				PRODUCT_NAME = CommProCoSys;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C777F77CD7484A1436C1B0 /* Pods-CommProCoSys.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 150;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-ms-adal/ios/**",
+				);
+				INFOPLIST_FILE = CommProCoSys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.5.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commissioning.test;
+				PRODUCT_NAME = CommProCoSys;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CommProCoSys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CommProCoSys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

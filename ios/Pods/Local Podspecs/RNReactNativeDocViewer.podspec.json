@@ -1,0 +1,25 @@
+{
+  "name": "RNReactNativeDocViewer",
+  "version": "1.0.0",
+  "summary": "RNReactNativeDocViewer",
+  "description": "RNReactNativeDocViewer",
+  "homepage": "https://github.com/philipphecht/react-native-doc-viewer",
+  "license": "MIT",
+  "authors": {
+    "author": "author@domain.cn"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/philipphecht/react-native-doc-viewer.git",
+    "tag": "master"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

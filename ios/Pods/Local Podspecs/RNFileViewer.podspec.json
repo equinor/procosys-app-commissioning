@@ -1,0 +1,25 @@
+{
+  "name": "RNFileViewer",
+  "version": "1.0.1",
+  "summary": "RNFileViewer",
+  "description": "Native file viewer for react-native",
+  "homepage": "https://github.com/vinzscam/react-native-file-viewer",
+  "license": "MIT",
+  "authors": {
+    "author": "vinz.scamporlino@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/vinzscam/react-native-file-viewer.git",
+    "tag": "master"
+  },
+  "source_files": "*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

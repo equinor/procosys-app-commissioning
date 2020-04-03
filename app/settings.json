@@ -1,0 +1,10 @@
+{
+  "AzureADTenantId": "3aa4a235-b6e2-48d5-9195-7fcf05b459b0",
+  "AzureADClientId": "cca5d39f-66ca-4295-be96-678125404495",
+  "AzureADRedirectUrl": "https://login.microsoftonline.com/common/oauth2/nativeclient",
+  "BuildConfiguration": "Dev",
+  "BuildNumber": "dev-build",
+  "ApiBaseUrl": "https://procosyswebapiqp.equinor.com/api/",
+  "ApiVersion": "4.0",
+  "ApiResourceIdentifier": "api://47641c40-0135-459b-8ab4-459e68dc8d08"
+}
