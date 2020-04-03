@@ -151,10 +151,10 @@ android {
             keyPassword 'android'
         }
         release {
-            storeFile file('Release.keystore')
-            storePassword ''
-            keyAlias ''
-            keyPassword ''
+            storeFile file('CommProCoSys-Release.keystore')
+            storePassword '#{ANDROID_RELEASE_STORE_PASSWORD}#'
+            keyAlias '#{ANDROID_RELEASE_KEY_ALIAS}#'
+            keyPassword '#{ANDROID_RELEASE_KEY_PASSWORD}#'
         }
     }
     buildTypes {
