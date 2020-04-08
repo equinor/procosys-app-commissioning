@@ -20,9 +20,9 @@
     "jwt-decode": "^2.2.0",
     "moment": "^2.24.0",
     "normalizr": "^3.4.1",
-    "react": "16.9.0",
+    "react": "16.11.0",
     "react-core": "^0.0.0",
-    "react-native": "0.61.5",
+    "react-native": "0.62.1",
     "react-native-azure-ad": "https://github.com/Cnordbo/react-native-azure-ad",
     "react-native-cn-richtext-editor": "^1.0.42",
     "react-native-device-info": "^5.3.1",
@@ -59,9 +59,9 @@
     "babel-jest": "^24.9.0",
     "eslint": "^6.7.1",
     "jest": "^25.2.7",
-    "metro-react-native-babel-preset": "^0.57.0",
+    "metro-react-native-babel-preset": "^0.58.0",
     "react-native-version-up": "^1.0.9",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.11.0"
   },
   "jest": {
     "preset": "react-native"
