@@ -13,7 +13,6 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.8.0",
     "@react-native-community/cookies": "^2.0.7",
-    "@react-native-community/masked-view": "^0.1.9",
     "@react-native-community/netinfo": "^4.6.1",
     "babel-polyfill": "^6.26.0",
     "immutability-helper": "^3.0.1",
@@ -35,10 +34,8 @@
     "react-native-mime-types": "^2.2.1",
     "react-native-popup-menu": "^0.15.6",
     "react-native-radio-buttons": "^1.0.0",
-    "react-native-reanimated": "^1.8.0",
     "react-native-render-html": "^4.1.2",
     "react-native-restart": "^0.0.13",
-    "react-native-safe-area-context": "^0.7.3",
     "react-native-salute": "^0.0.9",
     "react-native-screens": "^2.4.0",
     "react-native-splash-screen": "^3.2.0",
