@@ -1,5 +1,10 @@
-import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer, NavigationActions } from 'react-navigation';
+import {
+  createStackNavigator,
+  createSwitchNavigator,
+  createBottomTabNavigator,
+  createAppContainer
+} from 'react-navigation';
+
 import LoginPage from '../components/pages/LoginPage';
 import LogoutPage from '../components/pages/LogoutPage';
 import DefaultPage from '../components/pages/DefaultPage';
@@ -45,13 +50,45 @@ const MainRoute = createStackNavigator({
   AboutRoute: { screen: AboutPage },
 },
   {
-    navigationOptions: {
-      // gesturesEnabled: false,
-      ...commonOptions
-    },
+    navigationOptions: commonOptions,
+    initialRouteName: 'DefaultRoute'
   }
 );
 
+const LoginRoute = createStackNavigator(
+  {
+    Login: { screen: LoginPage }
+  },
+  {
+    navigationOptions: commonOptions,
+    headerMode: 'none'
+  }
+);
+
+const LogoutRoute = createStackNavigator(
+  {
+    Logout: { screen: LogoutPage }
+  },
+  {
+    navigationOptions: commonOptions,
+    headerMode: 'none'
+  }
+);
+
+const App = createSwitchNavigator(
+  {
+    LoginRoute,
+    MainRoute,
+    LogoutRoute
+  },
+  {
+    initialRouteName: 'LoginRoute'
+  }
+);
+
+export default createAppContainer(App);
+/*
+const 
 const App = createAppContainer(createStackNavigator({
     MainRoute: { screen: MainRoute },
     LogoutRoute: {screen: LogoutPage },
@@ -82,3 +119,4 @@ const navigateOnce = (getStateForAction) => (action, state) => {
 
 App.router.getStateForAction = navigateOnce(App.router.getStateForAction);
 MainRoute.router.getStateForAction = navigateOnce(MainRoute.router.getStateForAction);
+*/
