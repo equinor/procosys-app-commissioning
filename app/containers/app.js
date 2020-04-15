@@ -1,66 +1,32 @@
 import React, { Component } from 'react';
 import GlobalFont from 'react-native-global-font';
-import {
-  Alert
-} from 'react-native';
 import NetInfo from "@react-native-community/netinfo";
-import RNRestart from 'react-native-restart';
 import SplashScreen from 'react-native-splash-screen';
 import { Provider } from 'react-redux';
 import AppNavigator from './navigation';
 import store from './store';
 
-import { MenuContext } from 'react-native-popup-menu';
+import {postFatal} from '../services/api';
+import NavigationService from '../services/NavigationService';
+import {setNativeExceptionHandler} from 'react-native-exception-handler';
 
-import NavigatorService from '../services/NavigationService';
-
-import {postError, postFatal} from '../services/api';
-
-import {setJSExceptionHandler, getJSExceptionHandler, setNativeExceptionHandler} from 'react-native-exception-handler';
-
-
-// setJSExceptionHandler((e, isFatal) => {
-//   console.log('App.js ExceptionHandler: ', e);
-
-
-//     e = e || 'Unknown error';
-
-//     console.log('App.js ExceptionHandler: ', e);
-//     console.log('App.js ExceptionHandler - Message: ', e.message);
-//     console.log('App.js ExceptionHandler - ToString: ', e.toString());
-
-//     isFatal ? postFatal(e) : postError(e);
-    
-
-//     if (isFatal){
-//     let error = e;
-    
-
-//     Alert.alert(
-//       'Oh no! An error occurred',
-//       `The maintenance team is notified and we will need to restart the app.
-//         Error: ${(isFatal) ? 'Fatal:' : ''} ${error}
-//       `,
-//       [{
-//         text: 'Restart',
-//         onPress: () => {
-//           RNRestart.Restart();
-//         },
-//         style: 'destructive'
-//       },
-//       {
-//         text: 'Ignore',
-//         style: 'cancel'
-//       }]
-//     );
-
-//   }
-// }, true);
 
 setNativeExceptionHandler((errorString) => {
     console.log('Native Exception: ', errorString);
     postFatal({nativeException: errorString});
 });
+
+function getActiveRouteName(navigationState) {
+  if (!navigationState) {
+    return null;
+  }
+  const route = navigationState.routes[navigationState.index];
+  // dive into nested navigators
+  if (route.routes) {
+    return getActiveRouteName(route);
+  }
+  return route.routeName;
+}
 
 let unsubscribe = null;
 
@@ -97,11 +63,18 @@ export default class App extends Component {
 
     return (
       <Provider store={s}>
-          <MenuContext>
-            <AppNavigator ref={navigatorRef => {
-            NavigatorService.setContainer(navigatorRef);
-          }}/>
-          </MenuContext>
+          <AppNavigator
+          ref={navref => NavigationService.setTopLevelNavigator(navref)}
+          style={{ backgroundColor: '#FFF' }}
+          onNavigationStateChange={(prevState, currentState, action) => {
+            const currentScreen = getActiveRouteName(currentState);
+            const prevScreen = getActiveRouteName(prevState);
+      
+            //if (prevScreen !== currentScreen) {
+              //AnalyticsService.trackEvent("SCREEN_CHANGED", { currentScreen, prevScreen});
+            //}
+          }}
+        />
        </Provider>);
   }
 }
