@@ -5,11 +5,13 @@ import {connect} from 'react-redux';
 import * as Colors from '../../stylesheets/colors';
 import {moderateScale} from '../../utils/scaling';
 import {globalStyles} from '../../settings';
+import DeepLinkService from '../../services/DeepLinkService';
 
 import {
     View,
     StyleSheet,
     StatusBar,
+    Linking,
     Alert
 } from 'react-native';
 import {renderPackageStatus} from '../molecules/StatusRender';
@@ -87,9 +89,16 @@ class DefaultPage extends Component {
       'loadPackage': PropTypes.func.isRequired
   }
 
+  handleUrl = async (event) => {
+    try {
+      await DeepLinkService.handleUrl(event.url, this.props.loadPackage);
+    } catch (err) {
+      Alert.alert("Failed to navigate", err);
+    }
+  }
 
   componentDidMount () {
-
+      Linking.addEventListener("url", this.handleUrl);
       this.props.getPlant();
       if (!this.props.allBookmarked) {
 
@@ -105,6 +114,10 @@ class DefaultPage extends Component {
       StatusBar.setHidden(false);
       StatusBar.setBarStyle('light-content', true);
 
+  }
+
+  componentWillUnmount() {
+    Linking.removeEventListener("url", this.handleUrl);
   }
 
   UNSAFE_componentWillUpdate (nextProps) {
