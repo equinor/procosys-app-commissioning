@@ -78,6 +78,10 @@ class LoginPage extends Component {
     }
 
     componentDidUpdate() {
+        this.tryNavigate();
+    }
+
+    tryNavigate() {
         if (this.props.currentUser) {
           console.log('Navigating to MainRoute');
           this.props.navigation.navigate('MainRoute');
@@ -125,7 +129,7 @@ class LoginPage extends Component {
         this.setState({
           viewLogin: false
         });
-        this.validateLogin();
+        this.validateLogin().then(this.tryNavigate);
     }
 
     renderLogin = () => {
