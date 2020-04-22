@@ -68,6 +68,13 @@ class LoginPage extends Component {
     }
 
     _handleAppStateChange(nextAppState) {
+        if (
+            this.state.appState.match(/inactive|background/) &&
+            nextAppState === 'active' && this.props.currentUser
+        ) {
+            this.refreshView();
+        }
+
         this.setState({
             appState: nextAppState
         });
@@ -78,10 +85,6 @@ class LoginPage extends Component {
     }
 
     componentDidUpdate() {
-        this.tryNavigate();
-    }
-
-    tryNavigate() {
         if (this.props.currentUser) {
           console.log('Navigating to MainRoute');
           this.props.navigation.navigate('MainRoute');
