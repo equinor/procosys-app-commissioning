@@ -89,6 +89,11 @@ class LoginPage extends Component {
         }
     }
 
+    refreshView() {
+        this.setState({viewLogin: false});
+        setTimeout(() => this.setState({viewLogin: true}), 100);
+    }    
+
     validateLogin = async () => {
         console.log('Validating login');
         if (this.state.isValidating) {
@@ -129,7 +134,7 @@ class LoginPage extends Component {
         this.setState({
           viewLogin: false
         });
-        this.validateLogin().then(this.tryNavigate);
+        this.validateLogin().then(this.refreshView);
     }
 
     renderLogin = () => {
