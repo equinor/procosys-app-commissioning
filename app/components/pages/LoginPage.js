@@ -72,7 +72,7 @@ class LoginPage extends Component {
             this.state.appState.match(/inactive|background/) &&
             nextAppState === 'active' && this.props.currentUser
         ) {
-            this.refreshView();
+            this.validateLogin();
         }
 
         this.setState({
