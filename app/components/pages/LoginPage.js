@@ -134,7 +134,8 @@ class LoginPage extends Component {
         this.setState({
           viewLogin: false
         });
-        this.validateLogin().then(this.refreshView);
+        this.validateLogin();
+        this.refreshView();
     }
 
     renderLogin = () => {
