@@ -70,7 +70,7 @@ class LoginPage extends Component {
     _handleAppStateChange(nextAppState) {
         if (
             this.state.appState.match(/inactive|background/) &&
-            nextAppState === 'active' && this.props.currentUser
+            nextAppState === 'active'
         ) {
             this.validateLogin();
         }
