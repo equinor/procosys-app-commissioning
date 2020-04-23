@@ -59,45 +59,19 @@ class LoginPage extends Component {
               ApiResourceIdentifier,
             ]
           }
-      
-          this._handleAppStateChange = this._handleAppStateChange.bind(this);
-      
-          AppState.addEventListener('change', this._handleAppStateChange);
-      
+           
           this.adContext = new ReactNativeAD(ctxConfig);
     }
 
-    _handleAppStateChange(nextAppState) {
-        if (
-            this.state.appState.match(/inactive|background/) &&
-            nextAppState === 'active'
-        ) {
-            this.validateLogin();
-        }
-
-        this.setState({
-            appState: nextAppState
-        });
-    }
-
-    componentWillUnmount() {
-        AppState.removeEventListener('change', this._handleAppStateChange);
-    }
-
     componentDidUpdate() {
-        if (this.props.currentUser) {
+        if (this.state.isValidating===false && this.props.currentUser) {
           console.log('Navigating to MainRoute');
           this.props.navigation.navigate('MainRoute');
           return;
         }
     }
 
-    refreshView() {
-        this.setState({viewLogin: false});
-        setTimeout(() => this.setState({viewLogin: true}), 100);
-    }    
-
-    validateLogin = async () => {
+    validateLogin = async () =>  {
         console.log('Validating login');
         if (this.state.isValidating) {
           return;
@@ -117,10 +91,8 @@ class LoginPage extends Component {
           this.setState({
             isValidating: false
           });
-        }
-        
+        }  
     }
-
 
     onLoginButtonClick = () => {
         this.setState({
@@ -138,7 +110,6 @@ class LoginPage extends Component {
           viewLogin: false
         });
         this.validateLogin();
-        this.refreshView();
     }
 
     renderLogin = () => {
@@ -146,7 +117,7 @@ class LoginPage extends Component {
         return (
           <SafeAreaView style={{flex: 1}}>
             <View style={{flex: 1}}>
-              <ADLoginView onSuccess={this.onAdLoginSuccess} context={ReactNativeAD.getContext(AzureADClientId)} hideAfterLogin={true} />
+              <ADLoginView onSuccess={this.onAdLoginSuccess.bind(this)} context={ReactNativeAD.getContext(AzureADClientId)} />
             </View>
             <Button
                 title={'Cancel'}
