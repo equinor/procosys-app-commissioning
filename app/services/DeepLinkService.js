@@ -19,7 +19,7 @@ const SUPPORTED_URL_VERSION = {
  * @param {String} url URL in the form of "commapp://<version>:<intent>:<data>"
  *
  */
-const handleUrl = (url, loadPackage) => {
+const handleUrl = async (url, loadPackage) => {
   if (!url || url === "") throw "Missing parameter";
 
   //Remove Schema: 
@@ -30,7 +30,7 @@ const handleUrl = (url, loadPackage) => {
 
   switch (version.toLowerCase()) {
   case SUPPORTED_URL_VERSION.V1:
-    handleUrlFor_V1(urlWithoutTrailingSlash, loadPackage);
+    await handleUrlFor_V1(urlWithoutTrailingSlash, loadPackage);
     break;
   default:
     throw "Unsupported URL version";
@@ -44,13 +44,13 @@ const handleUrl = (url, loadPackage) => {
  * 
  * 
  */
-const handleUrlFor_V1 = (pUrl, loadPackage) => {
+const handleUrlFor_V1 = async (pUrl, loadPackage) => {
   if (!pUrl || pUrl === "") throw "Missing parameter";
   const [version, urlType, urlParam] = pUrl.split(":");
   if (version.toLowerCase() != SUPPORTED_URL_VERSION.V1) throw "Wrong handler accessed for V1 URL";
   switch (urlType.toLowerCase()) {
   case SUPPORTED_URL_TYPES.COMMPKG:
-    navigateToCommPkg(urlParam, loadPackage);
+      await navigateToCommPkg(urlParam, loadPackage);  
     break;
   default:
     throw "Unsupported URL format";
@@ -67,7 +67,7 @@ const navigateToCommPkg = async (commPkgNo, loadPackage) => {
   }
 
   if (result.length > 1) throw `Multiple commpkgs located for ${commPkgNo}, please use a more specific url`;
-  if (result.length <= 0) throw `No comm pkgs found for ${commPkgNo}`;
+  if (result.length <= 0) throw `No comm pkgs found for ${commPkgNo} in current project`;
 
   NavigationService.navigate('PackageRoute', { item: result[0] });
   loadPackage(result[0]);
