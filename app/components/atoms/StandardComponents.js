@@ -148,14 +148,13 @@ export function DropdownCodeDesc (props){
 
 
   var renderRow = function(row) {
-    return (<ReactTouchableOpacity>
+    return (
         <ReactText style={[
           globalStyles.textProps,
           {padding:15, width:props.width || moderateScale(330)},
           ]}>
           {combineTwo(row.item.Code, row.item.Description)}
-        </ReactText>
-      </ReactTouchableOpacity>)
+        </ReactText>)
   }
 
   var getButtonText = function(row) {
