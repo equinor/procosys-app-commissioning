@@ -178,10 +178,10 @@ class TaskItem extends Component {
     super(props);
 
     this.state = {
-      'expanded': false,
+      expanded: false,
       //  Punch:props.task,
-      'takeSnap': false,
-      'showHtml': false
+      takeSnap: false,
+      showHtml: false,
     };
 
     this.richtextComment = null;
@@ -545,13 +545,15 @@ class TaskItem extends Component {
   }
 
   renderSignUnsignButton() {
-    if (!this.state.editComment)
-      return 
+    if (!this.state.editComment) {
+      return (
         <Button
           title={this.state.task.SignedAt ? 'Unsign' : 'Sign'}
           onPress={() => { this.signUnsign(); }}
           disabled={!this.props.permissions.canUpdateAndSignTask/* !hasConnectivity*/}
-          viewStyle={styles.buttonStyle} />
+          viewStyle={styles.buttonStyle} />)
+    }
+    return null;
   }
 
   signUnsign() {
