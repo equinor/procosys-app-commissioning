@@ -18,7 +18,7 @@
     "immutability-helper": "^3.0.1",
     "js-base64": "^2.5.2",
     "jwt-decode": "^2.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.1",
     "normalizr": "^3.4.1",
     "react": "16.11.0",
     "react-core": "^0.0.0",
