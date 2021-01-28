@@ -25,7 +25,7 @@
     "react-native": "0.62.1",
     "react-native-azure-ad": "https://github.com/Cnordbo/react-native-azure-ad",
     "react-native-cn-richtext-editor": "^1.0.42",
-    "react-native-device-info": "^5.3.1",
+    "react-native-device-info": "^5.6.5",
     "react-native-doc-viewer": "git+https://github.com/Cnordbo/react-native-doc-viewer.git",
     "react-native-exception-handler": "^2.10.8",
     "react-native-gesture-handler": "^1.6.1",

@@ -6127,10 +6127,10 @@ react-native-cn-richtext-editor@^1.0.42:
     shortid "^2.2.14"
     xmldom "^0.1.27"
 
-react-native-device-info@^5.3.1:
-  version "5.5.5"
-  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-5.5.5.tgz#0be4dcee93433285a83ede81202a811d78901544"
-  integrity sha512-CIoFDlfaUVNJiHzj/2DRb0KGRxBnGfw8ZkFWR0txNg7CkN0R9hF5vToB5jklEQ8EK6HrgFEC6fa9TjJQY6eKzg==
+react-native-device-info@^5.6.5:
+  version "5.6.5"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-5.6.5.tgz#3f18d7c38b21cfc475163351a9aae6e9037a43a0"
+  integrity sha512-l457wv7gYXSRnm38AH+NpCgKYa1zxxfN0EL8mTBxo+TnasXtk0FZ86zWDLhm4eqpcSH8xpT/+z2MQrATfqCaoA==
 
 "react-native-doc-viewer@git+https://github.com/Cnordbo/react-native-doc-viewer.git":
   version "2.7.8"
